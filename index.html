@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon (5).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego Sudoku</title>
+</head>
+<body>
+    <header>
+        <h1>Jugá al Sudoku!</h1>
+        <div id="setup-game">
+
+            <div id="diff">
+                <h3>Elegí la dificultad: </h3>
+
+                <input type="radio" id="diff-1" name="dificultad" value="easy" checked>
+                <label for="diff-1">Facil</label>
+
+                <input type="radio" id="diff-2" name="dificultad" value="medium">
+                <label for="diff-2">Intermedio</label>
+
+                <input type="radio" id="diff-3" name="dificultad" value="hard">
+                <label for="diff-3">Dificil</label>
+
+            </div>
+
+            <div id="time">
+                <h3>Elegí el tiempo: </h3>
+
+                <input type="radio" id="time-1" name="tiempo" value="three" checked>
+                <label for="time-1">3 mins</label>
+
+                <input type="radio" id="time-2" name="tiempo" value="five">
+                <label for="time-2">5 mins</label>
+
+                <input type="radio" id="time-3" name="tiempo" value="ten">
+                <label for="time-3">10 mins</label>
+            </div>
+
+            <div id="theme">
+                <h3>Elegí el tema: </h3>
+
+                <input type="radio" id="theme-1" name="theme" value="light" checked>
+                <label for="theme-1">Claro</label>
+
+                <input type="radio" id="theme-2" name="theme" value="dark">
+                <label for="theme-2">Oscuro</label>
+            </div>
+        </div>
+        <button id="start-btn">A jugar!</button>
+    </header>
+
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="uno">1</p>
+            <p id="dos">2</p>
+            <p id="tres">3</p>
+            <p id="cuatro">4</p>
+            <p id="cinco">5</p>
+            <p id="seis">6</p>
+            <p id="siete">7</p>
+            <p id="ocho">8</p>
+            <p id="nueve">9</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Creado por <a href="https://www.instagram.com/__stef4no/">Stefano Straga</a></p>
+    </footer>
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
